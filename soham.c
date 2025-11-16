@@ -5,14 +5,14 @@ int x,y;
 
    printf("What do you want to perform;(+),(-),(*),(/):");
    scanf("%c", &a);
-   if(a !='-' && a !='+' && a !='/' && a !='*'){
+   if(a !='-' || a !='+' || a !='/' || a !='*'){
     printf("Invalid Operator ");
     return 1;
    }
   
     printf("Enter 1st Number:");
     if(scanf("%d",&x)!=1){
-        printf("Invalid Input;;;;;;");
+        printf("Invalid Input");
         return 1;
     }
  else {
@@ -36,7 +36,7 @@ printf("The Multiplication of the Two Number is:%d",x*y);
 break;
 
     case '/' :
-printf("The Division The Two Number is:%d",x/y);
+printf("The Division of The Two Number is:%d",x/y);
 break;
 }
     
